@@ -37,4 +37,5 @@ void winnerornot(const char& choice,const char& computerchoice)
     std::cout<<"\033[31mYOU LOOSE\033[0m";
   else if(choice=='s' && computerchoice=='p')
     std::cout<<"\033[32mYOU WIN\033[0m";
+  std::cout<<std::endl;;
 }
