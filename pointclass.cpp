@@ -11,6 +11,10 @@ class point
           {
            return point{(x+other.x),(y+other.y)};
           }
+      point operator-(const point& other)
+        {
+          return point{x-other.x,y-other.y};
+        }
       void print()
       {
         std::cout<<"\n the coordinates are :"<<"("<<x<<","<<y<<")";
@@ -27,6 +31,8 @@ int main()
   std::cin>>a>>b;
   point p2{a,b};
   point sum=p1+p2;
+  point diff=p1-p2;
   sum.print();
+  diff.print();
   return 0;
 }
